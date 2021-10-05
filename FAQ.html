@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="fund-accounting.ico">
+    <link rel="icon" 
+      type="image/png" 
+      href="fund-accounting.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FAQ | Accuracy Accounting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="popup.css">
+    <script src="main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="body">
+        <div class="faq_popup" id="faq_popup">
+                <i class="fas fa-times-circle" onclick="closeFAQ()"></i>
+                <h1 id="question">Lorem Ipsum Title</h1>
+                <p id="answer">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus optio quibusdam nobis necessitatibus! Cupiditate illo amet animi iusto vel distinctio incidunt magnam voluptatibus illum nisi ullam deleniti totam, nostrum maiores! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores alias tempora quidem totam deleniti fuga in libero earum consequatur, dolor a minima aut corrupti doloribus architecto corporis error. Facilis, omnis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem veritatis harum magnam nulla adipisci nobis quis laboriosam. Nemo minus eos rem repellendus, eius nostrum voluptate vero id libero ad.</p>
+        </div>
+        <div class="faq_popup" id="contact_popup">
+            <i class="fas fa-times-circle" onclick="closeContactPop()"></i>
+            <h1>Thank You!</h1>
+            <p class="short">Please allow us 24 hours to get back to you via email and phone call. If you'd like to book an appointment use the link below to access our online booking system.</p>
+            <button onclick="closeContactPop()" id="close">Close</button> <button href="booking.html">Book Now</button>
+        </div>
+    <script>
+        AOS.init();
+    </script>
+    <div class="mobile_nav" id="mobile_menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <div class="social_icons_mobile">
+                <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <nav>
+            <span onclick="showMenu()"><i class="fas fa-bars"></i></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+        </nav>
+    <header id="faq">
+        <h1 data-aos="fade-right">Define Your Own Success With Accuracy Accounting</h1>
+        <p data-aos="fade-right" data-aos-delay="200">Our mission is to empower small business owners as they grow
+            their dream into a reality.</p>
+        <a href="#top" data-aos="fade-right" data-aos-delay="400">Learn More</a>
+    </header>
+    <article data-aos="fade-up" data-aos-delay="400" id="contact">
+        <div class="content">
+            <div class="tag" id="top"></div>
+            <h1>Contact Us</h1>
+            <p>Questions or comments? Contact us anytime. Also connect with us via social media.</p>
+            <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+                <label for="">Name</label>
+                <input type="text" placeholder="Name">
+                <label for="">Company</label>
+                <input type="text" placeholder="Company Name">
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Phone Number">
+                <label for="">Email Address</label>
+                <input type="text" placeholder="Email Address">
+                <label for="">Comments</label>
+                <textarea name="" id="" placeholder="Please leave any questions or comments here."></textarea>
+                <button onclick="showContactPop()">Submit</button>
+        </div>
+    </article>
+
+    <aside>
+        <h1>Frequently Asked Questions</h1>
+        <p>Explore our services and learn what we can do to help your business thrive and grow.</p>
+    </aside>
+    <section id="faq">
+        <div class="question">
+            <div class="image"></div>
+            <h1>Why should I choose a monthly accountant vs. less frequent methods of accounting?</h1>
+            <i onclick="showFAQ(0)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I transition from in-house to outsourced accounting?</h1>
+            <i onclick="showFAQ(1)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>What are the best ways to separate my business and personal finances?</h1>
+            <i onclick="showFAQ(2)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I tell if I've outgrown my current accounting firm?</h1>  
+            <i onclick="showFAQ(3)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How does better accounting affect my bottom line?</h1>         
+            <i onclick="showFAQ(4)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>How can I make my new business financially successful?</h1>
+            <i onclick="showFAQ(5)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div class="question">
+            <div class="image"></div>
+            <h1>What questions should I ask when choosing the right accountant for my business?</h1>          
+            <i onclick="showFAQ(6)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+        <div id="question">
+            <div class="image"></div>
+            <h1>How much does monthly accounting cost? What factors go into the pricing?</h1>           
+            <i onclick="showFAQ(7)"  class="fas fa-chevron-circle-up"></i>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h1>About</h1>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="credits.html">Credits</a>
+            <h1>Services</h1>
+            <hr>
+            <a href="service.html#service1">Bookkeeping</a>
+            <a href="service.html#service2">Tax Prep & Filing</a>
+            <a href="service.html#service3">Auditing</a>
+            <a href="service.html#service4">Reports</a>
+        </div>
+        <div>
+            <h1>Support</h1>
+            <hr>
+            <a href="sitemap.html">Site Map</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">IRS Information</a>
+            <a href="#">Support</a>
+            <h1>Tax Reform</h1>
+            <hr>
+            <a href="#">Tax Reform</a>
+            <a href="#">Tax Cuts and Jobs Act</a>
+            <a href="#">Small Business Benefits</a>
+        </div>
+        <div>
+            <h1>Brand</h1>
+            <hr>
+            <a href="#">Equal Opportunity Provider</a>
+            <a href="#">Diversity Commitment</a>
+            <a href="#">Press</a>
+            <a href="#">Public Relations</a>
+            <a href="">Brand Assets</a>
+            <a href="#">Careers</a>
+            <a href="">Philanthropy</a>
+        </div>
+        <div>
+            <h1>Connect</h1>
+            <hr>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i>YouTube</a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+        <div>
+                <h1>Contact Us</h1>
+                <hr>
+                <a href="tel: 555-555-5555"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
+                <a href="mailto: example@accuracy.com"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
+                <a><i class="fas fa-map-marker-alt"></i>Locations</a>
+                <a href="https://www.google.com/maps"><span>Phoenix Office</span> <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
+                <a href="https://www.google.com/maps"><span>Tucson Office</span> <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
+                <a href="https://www.google.com/maps"><span>Las Vegas Office</span> <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
+            </div>
+    </footer>
+</body>
+
+</html>

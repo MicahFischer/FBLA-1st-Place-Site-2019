@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head profile="fund-accounting.ico">
+    <link rel="icon" 
+      type="image/png" 
+      href="fund-accounting.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Services | Accuracy Accounting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="faq_popup" id="faq_popup">
+        <i class="fas fa-times-circle" onclick="closeFAQ()"></i>
+        <h1>Get Your Free Quote</h1>
+        <p>Your price is based on the number of employees in full-time positions and the amount of revenue your company generates.
+            Your quote may vary based on your companies needs. Quotes are not guaranteed prices. We make a penny on every dollar and charge 10¢ for each employee on payroll. All plans start with a services fee of $125/mo.
+        </p>
+        <label for=""># of Employees</label>
+        <input type="text" id="employees">
+        <label for="">Annual Revenue in $</label>
+        <input type="text" id="revenue">
+        <button onclick="calcQuote()">Get Your Free Quote</button>
+        <div class="price">
+            <h1 id="total">$125<span>/mo</span></h1>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+    <div class="mobile_nav" id="mobile_menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <div class="social_icons_mobile">
+                <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+                <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
+        <nav>
+            <span onclick="showMenu()"><i class="fas fa-bars"></i></span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="booking.html" id="booking"><i class="fas fa-calendar-check"></i> Book Now</a>
+            <a href="https://www.youtube.com" class="social"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/" class="social"><i class="fab fa-twitter-square"></i></a>
+        </nav>
+    <header id="service">
+        <h1 data-aos="fade-right">Service and Commitment Your Business Can Count On</h1>
+        <p data-aos="fade-right" data-aos-delay="200">Accuracy is committed to your small business's success. Learn about
+            how we can help you.</p>
+        <a href="#top" data-aos="fade-right" data-aos-delay="400">Learn More</a>
+    </header>
+    <article data-aos="fade-up" data-aos-delay="400">
+        <div class="image" id="service">
+            <div class="tag" id="top"></div>
+            <h1>The Water Project <br> Flagstaff, AZ</h1>
+        </div>
+        <div class="content">
+            <h1>Discover Our Wide Range of Services</h1>
+            <p>Accuracy Accounting provides a wide range of services to customers, and even to noncustomers. We offer
+                services to fit any business and budget. Along with Bookkeeping, Tax Prep and Filing, Auditing, and
+                Reports we also provide tons of free resources for small business owners. Our prices start at just
+                $125/month. Even noncustomers can access these resources and chat with our on-demand CPAs through social media. See what we can do for your small business. Book your free, no obligation, consultation today.</p>
+            <a href="booking.html">Book Now</a>
+        </div>
+    </article>
+
+    <aside>
+        <h1>Our Services</h1>
+        <p>Explore our services and learn what we can do to help your business thrive and grow.</p>
+    </aside>
+    <section>
+            <div data-aos="fade-up">
+                <div class="image" id="bookkeeping"></div>
+                <h1>Bookkeeping</h1>
+                <p>We help you organize and keep track of your small business financial records. Our team of certified CPAs can help ensure that your records are kept up to date and accurate. Bookkeeping also helps you get a better picture of your finances.</p>
+                <a href="service.html#service1">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="taxes"></div>
+                <h1>Taxes</h1>
+                <p>As a small business owner, it can be difficult to file your taxes. Our CPAs will help you make the most
+                    out of your money so you get the biggest return on your taxes. We also offer tax prep services and free
+                    courses on how to use the trusted tax tool: Quickbooks.</p>
+                <a href="service.html#service2">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="audit"></div>
+                <h1>Auditing</h1>
+                <p>Having an annual audit is very important but can also be tedious and time-consuming. However, with the help of our trained CPAs, we can make the process of auditing quick, and painless, which saves your small business time and money.</p>
+                <a href="service.html#service3">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div data-aos="fade-up">
+                <div class="image" id="report"></div>
+                <h1>Reports</h1>
+                <p>At the end of the business year or quarter, it is crucial that you reflect on how your company is performing. We will produce high quality annual or quarterly reports so that you can understand where your efforts and money are best spent.</p>
+                <a href="service.html#service4">Learn More <i class="fas fa-angle-right"></i></a>
+            </div>
+        </section>
+
+<main class="services">
+        <article class="service" id="bookkeeping">
+                <div class="content" data-aos="fade-up">
+                    <div class="tag" id="service1"></div>
+                    <h1><i class="fas fa-table"></i> Bookkeeping</h1>
+                    <p>Bookkeeping helps small business owners manage and track their earnings and spending. Our team of certified
+                        CPAs will ensure that your records are kept up to date and accurate. All transactions are run through
+                        our trusted Quickbooks accounting software so that you can review your company’s finances in real time.
+                        We even provide free training courses to help you better understand the Quickbooks software suite.</p>
+                </div>
+            </article>
+            <article class="service" id="taxes">
+                <div class="content" data-aos="fade-up">
+                        <div class="tag" id="service2"></div>
+                    <h1><i class="fas fa-percentage"></i> Tax Prep & Filing</h1>
+                    <p>Getting ready for tax-season alone is a daunting task, especially for a small business. With our service, it will 
+                        seem like a breeze. Our prep team will help clean up any loose ends and find missing accounts you need as well as help in organizing your accounts by scanning receipts into our free Quickbooks software. 
+                    </p>
+                </div>
+            </article>
+            <article class="service" id="audits">
+                <div class="content" data-aos="fade-up">
+                    <div class="tag" id="service3"></div>
+                    <h1><i class="fas fa-search-dollar"></i> Auditing</h1>
+                    <p>Our team helps small business owners manage and track their earnings and spending. Our team of certified
+                        CPAs will ensure that your records are kept up to date and accurate. All transactions are run through
+                        the popular Quickbooks accounting software so that you can review your company’s finances in real time.
+                        We even provide free training to help you better understand the Quickbooks software suite.</p>
+                </div>
+            </article>
+            <article class="service" id="reports">
+                <div class="content" data-aos="fade-up">
+                    <div class="tag" id="service4"></div>
+                    <h1><i class="fas fa-chart-line"></i> Reports</h1>
+                    <p>Our team helps small business owners manage and track their earnings and spending. Our team of certified
+                        CPAs will ensure that your records are kept up to date and accurate. All transactions are run through
+                        the popular Quickbooks accounting software so that you can review your company’s finances in real time.
+                        We even provide free training to help you better understand the Quickbooks software suite.</p>
+                </div>
+            </article>
+</main>
+    
+
+    <aside id="price">
+        <h1>Pricing</h1>
+        <p>Find a plan that fits your business' needs and budget, or get a customized quote.</p>
+        <a onclick="showFAQ()">Get A Quote <i class="fas fa-angle-right"></i></a>
+    </aside>
+    <section id="pricing">
+        <div>
+            <div class="image" id="smbiz"></div>
+            <h4>Our most affordable plan</h4>
+            <h1>Startup</h1>
+            <h2>Payroll for Up to 25 Employees</h2>
+            <h2>Bookkeeping for Up to $1M in Revenue</h2>
+            <h2>Annual Company Wide Auditing</h2>
+            <h2>Detailed Annual Reports & Quarterly Summaries</h2>
+            <h2>Tax Prep and Filing with CPAs</h2>
+            <h3>$125<span>/mo</span></h3>
+            <a href="booking.html">Buy Now <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div>
+            <div class="image" id="mdbiz"></div>
+            <h4>Our most popular plan</h4>
+            <h1>Small Business</h1>
+            <h2>Payroll for Up to 100 Employees</h2>
+            <h2>Bookkeeping for Up to $10M in Revenue</h2>
+            <h2>Semi-Annual Company Wide Auditing</h2>
+            <h2>Detailed Semi-Annual Reports & Quarterly Summaries</h2>
+            <h2>Tax Prep and Filing with CPAs</h2>
+            <h3>$350<span>/mo</span></h3>
+            <a href="booking.html">Buy Now <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div>
+            <div class="image" id="lrgbiz"></div>
+            <h4>Our most inclusive plan</h4>
+            <h1>Business Plus</h1>
+            <h2>Payroll for Up to 250 Employees</h2>
+            <h2>Bookkeeping for Up to $100M in Revenue</h2>
+            <h2>Quarterly Company Wide Auditing</h2>
+            <h2>Detailed Quarterly Reports & Quarterly Summaries</h2>
+            <h2>Tax Specialist assigned to your company</h2>
+            <h3>$750<span>/mo</span></h3>
+            <a href="booking.html">Buy Now <i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <h1>About</h1>
+            <hr>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="credits.html">Credits</a>
+            <h1>Services</h1>
+            <hr>
+            <a href="service.html#service1">Bookkeeping</a>
+            <a href="service.html#service2">Tax Prep & Filing</a>
+            <a href="service.html#service3">Auditing</a>
+            <a href="service.html#service4">Reports</a>
+        </div>
+        <div>
+            <h1>Support</h1>
+            <hr>
+            <a href="sitemap.html">Site Map</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">IRS Information</a>
+            <a href="#">Support</a>
+            <h1>Tax Reform</h1>
+            <hr>
+            <a href="#">Tax Reform</a>
+            <a href="#">Tax Cuts and Jobs Act</a>
+            <a href="#">Small Business Benefits</a>
+        </div>
+        <div>
+            <h1>Brand</h1>
+            <hr>
+            <a href="#">Equal Opportunity Provider</a>
+            <a href="#">Diversity Commitment</a>
+            <a href="#">Press</a>
+            <a href="#">Public Relations</a>
+            <a href="">Brand Assets</a>
+            <a href="#">Careers</a>
+            <a href="">Philanthropy</a>
+        </div>
+        <div>
+            <h1>Connect</h1>
+            <hr>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i>Twitter</a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>Instagram</a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i>YouTube</a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        </div>
+        <div>
+                <h1>Contact Us</h1>
+                <hr>
+                <a href="tel: 555-555-5555"><i class="fas fa-phone"></i>Call<br>555-555-5555</a>
+                <a href="mailto: example@accuracy.com"><i class="fas fa-envelope"></i>Email<br>help@accuracy.com</a>
+                <a><i class="fas fa-map-marker-alt"></i>Locations</a>
+                <a href="https://www.google.com/maps"><span>Phoenix Office</span> <br> 3546 N 35th Ave, <br> Phoenix, AZ 67105</a>
+                <a href="https://www.google.com/maps"><span>Tucson Office</span> <br> 2657 N 22nd St, <br> Tuscon, AZ 26911</a>
+                <a href="https://www.google.com/maps"><span>Las Vegas Office</span> <br> 9768 N 126th Ln, <br> Las Vegas, NV 48127</a>
+            </div>
+    </footer>
+</body>
+
+</html>

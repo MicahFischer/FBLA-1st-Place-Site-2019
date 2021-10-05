@@ -1,0 +1,1284 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Serif:700');
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+.tag {
+    position: relative;
+    top: -140px;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: block;
+    background: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    height: 54px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    padding: 0 20px;
+}
+
+nav a {
+    color: rgb(39, 39, 39);
+    padding: 8px 20px;
+    margin: 8px 0;
+    float: left;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s;
+    border-radius: 50px;
+}
+
+nav span {
+    color: rgb(39, 39, 39);
+    padding: 2px 20px;
+    margin: 8px 0;
+    float: left;
+    display: none;
+    text-decoration: none;
+    transition: .2s;
+    border-radius: 50px;
+    font-size: 28px;
+    background: rgb(0, 132, 255);
+    color: white;
+}
+
+nav a#booking {
+    color: white;
+    background: rgb(0, 132, 255);
+    float: right;
+    margin: 8px 0px 8px 20px;
+}
+
+nav a.social {
+    float: right;
+    padding: 3px 6px;
+    font-size: 26px;
+    color: rgb(68, 68, 68)
+}
+
+nav a i {
+    margin-right: 4px;
+}
+
+nav a.social i {
+    margin: 0;
+}
+
+nav a:hover,
+nav span:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a.social:hover {
+    box-shadow: 0 0 0 transparent;
+    color: rgb(0, 132, 255);
+}
+
+nav a#booking:hover {
+    background: white;
+    color: rgb(0, 132, 255);
+}
+
+header {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 100px 12vw 200px;
+}
+
+header#about {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header#service {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_service.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header#contact {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header#faq {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_faq.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header#sitemap {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_sitemap.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+header#credits {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("header_credits.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+header h1 {
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 48px;
+    max-width: 700px;
+    margin: 0;
+}
+
+header p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 28px;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+header a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px white solid;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 50px;
+}
+
+header a:hover {
+    background: white;
+    color: rgb(0, 132, 255);
+}
+
+article {
+    border-radius: 10px;
+    background: white;
+    max-width: 1200px;
+    margin: -100px auto 40px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+article#contact {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("article_contact.jpeg");
+    background-position: center left;
+    background-size: cover;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+article#credits {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.75)), url("article_credits.jpeg");
+    background-position: center left;
+    background-size: cover;
+}
+
+
+main.services {
+    background: linear-gradient(to top, rgb(0, 132, 255), rgb(240, 240, 240));
+    padding: 40px 20px;
+}
+
+main.commit {
+    background: linear-gradient(to top, rgb(216, 216, 216), rgb(240, 240, 240));
+    padding: 40px 20px;
+}
+
+article.service {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("article_contact.jpeg");
+    background-position: center left;
+    background-size: cover;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    margin: 40px auto;
+}
+
+
+article .socialbox {
+    position: relative;
+    text-align: center;
+}
+
+article.service .content a.social {
+    margin: 20px 3px 0 3px;
+}
+
+article .socialbox i {
+    color: white;
+    font-size: 32px;
+    padding: 2.75px 0;
+}
+
+
+article.service#bookkeeping {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("bookkeeping.jpg");
+    background-position: center left;
+    background-size: cover;
+}
+
+article.service#taxes {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("taxes.jpg");
+    background-position: center left;
+    background-size: cover;
+}
+
+article.service#audits {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("audits.jpg");
+    background-position: center left;
+    background-size: cover;
+}
+
+article.service#reports {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("reports.jpg");
+    background-position: center left;
+    background-size: cover;
+}
+
+article.service#arrow {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.5)), url("arrow.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+article.service#app {
+    background: linear-gradient(45deg, rgba(0, 132, 255, 1), rgba(39, 39, 39, .8)), url("app.jpg");
+    background-position: top center;
+    background-size: 200%, cover;
+    animation: background 3s infinite alternate;
+}
+
+@keyframes background {
+    0% {
+        background-position: top left, center center;
+    }
+
+    100% {
+        background-position: bottom right, center center;
+    }
+}
+
+article.service#app h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+}
+
+article.service#app h2 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+}
+
+article.service#app p {
+    font-size: 28px;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0 0 40px rgb(0, 0, 0);
+}
+
+article.service#app .button_panel {
+    text-align: center
+}
+
+article.service#app .button_panel a:first-of-type {
+    margin-right: 20px;
+}
+
+article.service#app img {
+    display: block;
+    margin: 0 auto;
+    z-index: 10;
+    margin-top: -20px;
+    margin-bottom: -80px;
+    animation: phone 4s infinite;
+    transition: .2s;
+    max-width: 800px;
+}
+
+article#contact p {
+    max-width: 460px;
+}
+
+article#credits p {
+    margin: 0;
+}
+
+article div.content {
+    padding: 20px;
+}
+
+article div.image {
+    position: relative;
+}
+
+article div.image h1 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(39, 39, 39);
+    background: white;
+    border-radius: 10px;
+    padding: 6px 12px;
+    max-width: 260px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+article div.image#startups {
+    background: url("startup1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+article div.image#about {
+    background: url("startup2.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+article div.image#service {
+    background: url("startup3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+
+article div.content h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 42px;
+    margin: 0;
+}
+
+article div.content h1 i {
+    display: block;
+    color: rgb(0, 132, 255);
+    font-size: 60px;
+}
+
+article div.content h1:not(:first-of-type) i {
+    margin-top: 48px;
+}
+
+div.content.center h1,
+div.content.center p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+article div.content p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+article.service p {
+    max-width: 680px;
+    color: rgb(39, 39, 39);
+}
+
+article div.content a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    margin-top: 10px;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: .2s;
+}
+
+article div.content a.center {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+article div.content a:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+article div.content a.social {
+    font-size: 24px;
+    display: inline-block;
+    padding: 15.25px 20px;
+    color: white;
+    background: rgb(39, 39, 39);
+    transition: .2s;
+    margin-right: 6px;
+    margin-bottom: 20px;
+}
+
+article div.content a.social:hover {
+    transform: scale(1.1);
+}
+
+article label {
+    display: block;
+    font-family: 'Lato',
+        sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 22px;
+    margin: 6px 0 4px;
+}
+
+article input {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+
+article textarea {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    resize: none;
+    height: 180px;
+    width: 80%;
+}
+
+article button {
+    display: inline-block;
+    font-family: 'Lato',
+        sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    border: 0;
+    transition: .2s;
+}
+
+article button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+aside {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("aside.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 12vw 110px;
+}
+
+aside#contact {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("contactaside.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 12vw 110px;
+}
+
+aside#team {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("teamaside.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 12vw 110px;
+}
+
+aside#price {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.95) 0%, rgba(0, 0, 0, 0.25)), url("asideprice.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 30px 12vw 110px;
+}
+
+
+aside h1 {
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 48px;
+    margin: 0 auto;
+}
+
+aside p {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 28px;
+    max-width: 600px;
+    margin: 10px auto 0;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+aside a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s;
+}
+
+aside a:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+section {
+    max-width: 1200px;
+    margin: -100px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#pricing,
+section#faq {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+section div {
+    position: relative;
+    background: white;
+    padding: 0;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: .2s;
+    transition: transform 0s;
+}
+
+section#pricing>div {
+    margin: 40px 0;
+    background: white;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+section#faq>div {
+    overflow: hidden;
+}
+
+section#pricing div:nth-last-of-type(2) {
+    transform: scale(1.075);
+    z-index: 20;
+}
+
+section div.image {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("section.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 320px;
+    margin: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+section div.image#bookkeeping {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("bookkeeping.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#taxes {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("taxes.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#audit {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("audits.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#report {
+    background: linear-gradient(to right, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("reports.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#smbiz {
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("smbiz.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#mdbiz {
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("mdbiz.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div.image#lrgbiz {
+    background: linear-gradient(to top, rgba(0, 132, 255, 0.5), rgba(0, 0, 0, 0.25)), url("lrgbiz.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section div h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    margin: 0;
+    padding: 20px 20px 8px;
+}
+
+section#pricing>div h1 {
+    padding: 0 30px 12px;
+    line-height: 24px;
+}
+
+section div h2 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    margin: 0;
+    padding: 20px 20px 8px;
+
+}
+
+section#pricing>div h2 {
+    font-family: 'Lato', sans-serif;
+    margin: 0px 30px 8px;
+    color: rgb(128, 128, 128);
+    padding: 12px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 50px;
+}
+
+section div h3 {
+    font-family: 'PT Serif', serif;
+    color: rgb(0, 132, 255);
+    font-size: 48px;
+    margin: 0;
+    padding: 20px 20px 8px;
+}
+
+section#pricing>div h3 {
+    padding: 12px 30px 0;
+    line-height: 24px;
+    text-align: center;
+}
+
+section#pricing>div h3 span {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+}
+
+section div p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0;
+    padding: 0 20px 8px;
+}
+
+section#pricing>div p {
+    padding: 0 30px 8px;
+}
+
+section#faq>div p {
+    position: relative;
+    transition: .6s;
+}
+
+section div h4 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 16px;
+    margin: 0;
+    padding: 0 20px 8px;
+
+}
+
+section#pricing>div h4 {
+    padding: 20px 30px 8px;
+    text-transform: uppercase;
+    color: rgb(0, 132, 255);
+}
+
+
+section div a,
+section div button,
+section#faq div i {
+    border: 0;
+    display: inline-block;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 20px 30px;
+    transition: .2s;
+}
+
+section div a,
+section div button {
+    font-family: 'Lato', sans-serif;
+}
+
+
+section#faq>div {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+section#faq div i {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+}
+
+
+section#pricing>div a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: .2s;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+
+section div a:hover,
+section div button:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+section#pricing>div a:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+div.contact_cards {
+    max-width: 1400px;
+    margin: -100px auto 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+div.contact_cards>div {
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    background: white;
+    transition: .2s;
+}
+
+
+div.contact_cards div i {
+    font-size: 64px;
+    color: rgb(0, 132, 255);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.contact_cards div img {
+    display: block;
+    border-radius: 50%;
+    height: 128px;
+    margin: 0 auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: .2s;
+}
+
+div.contact_cards div h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 42px;
+    margin: 10px 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div h2 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    margin: 16px 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div h4 {
+    font-family: 'PT Serif', serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0 10px 0;
+    text-align: center;
+}
+
+div.contact_cards div hr {
+    border: 2px rgb(0, 132, 255) solid;
+    width: 40px;
+}
+
+div.contact_cards div p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 0 0 6px;
+    text-align: center;
+}
+
+div.contact_cards div a {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 18px;
+    text-decoration: none;
+    background: white;
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s;
+}
+
+div.contact_cards div a:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background: rgb(39, 39, 39);
+    padding: 40px 40px 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+footer div h1 {
+    text-align: left;
+    font-family: 'PT Serif', serif;
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+footer div hr {
+    border: none;
+    border: 2px rgb(0, 132, 255) solid;
+    width: 50px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+footer div a {
+    clear: both;
+    font-family: 'Lato', sans-serif;
+    color: rgb(216, 216, 216);
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    margin: 6px 0;
+}
+
+footer div a span {
+    text-transform: uppercase;
+    color: rgb(0, 132, 255);
+    font-size: 16px;
+}
+
+footer div a i {
+    margin-right: 4px;
+    color: rgb(0, 132, 255);
+}
+
+
+
+.mobile_nav,
+.faq_popup {
+    overflow: auto;
+    background: white;
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: -150%;
+    width: 100%;
+    padding: 20px;
+    z-index: 100;
+    transition: .4s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.faq_popup {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 80vh;
+}
+
+.menu_show {
+    top: 54px;
+}
+
+.popup_show {
+    top: 54px;
+}
+
+.mobile_nav a {
+    display: block;
+    font-family: 'PT Serif',
+        serif;
+    color: rgb(0, 132, 255);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 8px 20px;
+    margin-bottom: 10px;
+    background: rgb(240, 240, 240);
+    border-radius: 40px;
+    transition: .2s;
+}
+
+.mobile_nav a#booking {
+    display: block;
+    font-family: 'PT Serif',
+        serif;
+    color: white;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+}
+
+.mobile_nav a.social {
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    background: rgb(39, 39, 39);
+    transition: .2s;
+    margin-right: 6px;
+}
+
+.mobile_nav a.social:hover {
+    transform: scale(1.1);
+}
+
+.mobile_nav a:hover {
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.mobile_nav a#booking:hover {
+    background: rgb(39, 39, 39);
+    color: white;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.faq_popup h1 {
+    font-family: 'PT Serif', serif;
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    margin: 0;
+    padding: 8px 0;
+}
+
+
+.faq_popup p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.faq_popup p.short {
+    font-family: 'Lato', sans-serif;
+    color: rgb(128, 128, 128);
+    font-size: 22px;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+.faq_popup i {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 34px;
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 40px;
+    float: right;
+    margin-top: 12px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq_popup label {
+    display: block;
+    font-family: 'Lato',
+        sans-serif;
+    color: rgb(0, 132, 255);
+    font-size: 22px;
+    margin: 6px 0 4px;
+}
+
+.faq_popup input {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+}
+
+.faq_popup textarea {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: block;
+    font-family: 'Lato';
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    resize: none;
+    height: 180px;
+    width: 80%;
+}
+
+.faq_popup button,
+.faq_popup a {
+    display: inline-block;
+    font-family: 'Lato',
+        sans-serif;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgb(0, 132, 255);
+    padding: 16px 26px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin: 20px 0 0;
+    border: 0;
+}
+
+.faq_popup button#close {
+    margin-top: 0;
+}
+
+.faq_popup .price h1 {
+    font-size: 48px;
+    color: rgb(0, 132, 255);
+    display: block;
+}
+
+.faq_popup .price h1 span {
+    color: rgb(39, 39, 39);
+    font-size: 24px;
+    font-family: 'Lato',
+        sans-serif;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1260px) {
+    div.contact_cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer div:nth-of-type(2),
+    footer div:nth-of-type(3) {
+        display: none;
+    }
+
+    section#faq {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    section#pricing,
+    section#faq {
+        grid-template-columns: 1fr;
+    }
+
+    section#pricing div:nth-of-type(2) {
+        transform: scale(1);
+    }
+
+    nav a.social {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    div.image {
+        height: 400px;
+        display: block;
+    }
+
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    div.contact_cards {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav span {
+        display: inline-block;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article.service#app p {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    article {
+        padding: 0;
+    }
+
+    article div.content h1,
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    .mobile_nav a.social {
+        display: inline-block;
+        padding: 15px 20px;
+        color: white;
+        background: rgb(39, 39, 39);
+        transition: .2s;
+        margin-right: 0;
+    }
+
+    article .socialbox i {
+        color: white;
+        font-size: 24px;
+        padding: 2.75px 0;
+    }
+
+    article.service .content a.social {
+        margin: 20px 0 0 0;
+    }
+
+    article div.content a.social {
+        padding: 7.25px 11.5px;
+    }
+
+    article.service#app .button_panel a:first-of-type {
+        margin-right: 0px;
+    }
+
+    article.service#app img {
+        position: relative;
+        transform: translateX(-20%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    article.service#app p {
+        margin-top: -120px;
+    }
+}
